@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="4284037924">
+    <data-source source="LOCAL" name="Rails fansheaven: development" uuid="7f90eb66-6f73-40f0-9cba-4bfb090ec48e">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:fansheaven_development</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfe5dfdedfdedfc3dfd9dff5df9adf9adf9d</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails fansheaven: test" uuid="4b3f2889-979a-49e0-9b59-46d38eb9856a">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:fansheaven_test</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfe5dfdedfdedfc3dfd9dff5df9adf9adf9d</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails fansheaven: production" uuid="87afccbd-4b1b-41dc-aaa2-8f0eba0595e9">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:fansheaven_production</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfecdfebdfe4dff9dfe2dfefdfebdffcdfefdfe4dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

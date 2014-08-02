@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails fansheaven: development" uuid="7f90eb66-6f73-40f0-9cba-4bfb090ec48e">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails fansheaven: test" uuid="4b3f2889-979a-49e0-9b59-46d38eb9856a">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails fansheaven: production" uuid="87afccbd-4b1b-41dc-aaa2-8f0eba0595e9">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
