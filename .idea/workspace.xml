@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3901d05-7107-4946-b5dd-e47ebda2e393" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Sites\fansheaven\Gemfile.lock" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="fansheaven.iws" />
