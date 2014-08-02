@@ -6,7 +6,7 @@ Fansheaven::Application.routes.draw do
   match '/about',     :to => 'pages#about'
   match '/help',      :to => 'pages#help'
   match '/analytics', :to => 'pages#analytics'
-
+  match '/signup', :to => 'users#new'
   # get 'users/new'
   # get 'pages/analytics'
   # get 'pages/help'

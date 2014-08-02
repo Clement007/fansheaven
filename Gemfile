@@ -20,7 +20,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
+gem 'rails_12factor'
 group :development, :test do
   gem 'rspec-rails',      ">= 2.0.0.beta"
 end
