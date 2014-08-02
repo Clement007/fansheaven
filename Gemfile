@@ -23,6 +23,7 @@ gem 'jquery-rails'
 gem 'rails_12factor'
 group :development, :test do
   gem 'rspec-rails',      ">= 2.0.0.beta"
+  gem 'annotate', '2.5.0'
 end
 
 # To use ActiveModel has_secure_password
