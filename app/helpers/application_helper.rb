@@ -13,7 +13,7 @@ def title
  end
 
  def logo
- 	image_tag("logo.png", :alt => "Fans Heaven App", :class => "round")
+ 	image_tag("/images/logo.png", :alt => "Fans Heaven App", :class => "round")
  end
 
 end

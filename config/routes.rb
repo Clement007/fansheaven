@@ -1,5 +1,8 @@
 Fansheaven::Application.routes.draw do
+  # get "sessions/new"
+
   resources :users
+  resources :sessions, :only => [:new, :create, :destroy]
   root :to => "pages#home"
   #get 'pages/home'
 
@@ -7,7 +10,10 @@ Fansheaven::Application.routes.draw do
   match '/about',     :to => 'pages#about'
   match '/help',      :to => 'pages#help'
   match '/analytics', :to => 'pages#analytics'
-  match '/signup', :to => 'users#new'
+  match '/search',    :to => 'pages#search'
+  match '/signup',    :to => 'users#new'
+  match '/signin',    :to => 'sessions#new'
+  match '/signout',   :to => 'sessions#destroy'
 
   # get 'users/new'
   # get 'pages/analytics'

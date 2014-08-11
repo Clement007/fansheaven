@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Fansheaven::Application.config.secret_token = 'c972cface8234837f91a0bcad283dc5636996b59699a4d79852b72a64f76eea771d22e6f5d3cb45701207ef7bd0b1db378c5cf11542867b1041a17f688d9f90e'
+Fansheaven::Application.config.secret_token = 'de9df29f0485be88770d5faa05d381169b3456ff4176bb792bf6388fc10ef7221ac542cc73a0a4f0d7be217075f0da2794945fd3e17c8bb4add559ca5233be0f'

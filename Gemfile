@@ -18,11 +18,12 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
+# Turbolinks makes following links in your web application faster. Read more:    https://github.com/rails/turbolinks
+gem 'turbolinks'
 gem 'jquery-rails'
 gem 'rails_12factor'
 group :development, :test do
-  gem 'rspec-rails',      ">= 2.0.0.beta"
+  gem 'rspec-rails', '>= 2.0.0.beta'
   gem 'annotate', '2.5.0'
   gem 'factory_girl_rails', '1.0'
 end

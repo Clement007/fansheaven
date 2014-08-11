@@ -22,5 +22,9 @@ class PagesController < ApplicationController
   def search
   	@title = "Search"
   end
+
+  def user
+    @title = "Users"
+  end
 end
 
