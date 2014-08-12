@@ -6,12 +6,13 @@ gem 'rails', '3.2.7'
 
 gem 'pg'
 gem 'gravatar_image_tag', '0.1.0'
+gem 'will_paginate'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails'
+  gem 'coffee-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -25,7 +26,7 @@ gem 'rails_12factor'
 group :development, :test do
   gem 'rspec-rails', '>= 2.0.0.beta'
   gem 'annotate', '2.5.0'
-  gem 'factory_girl_rails', '1.0'
+  gem 'factory_girl_rails'
 end
 
 # To use ActiveModel has_secure_password
@@ -42,4 +43,4 @@ end
 
 # To use debugger
 # gem 'debugger'
-gem 'tzinfo-data', platforms: [:mingw, :mswin]
+gem 'tzinfo', platforms: [:mingw, :mswin]
