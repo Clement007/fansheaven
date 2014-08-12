@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   before_filter :authenticate, :only => [:index, :edit, :update, :destroy]
   before_filter :correct_user, :only => [:edit, :update]
   before_filter :admin_user, :only => :destroy
+
   def index
   @users = User.paginate(:page => params[:page], :per_page => 10)
   @title = "All users"
@@ -48,7 +49,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
-  User.find(params[:id]).destroy
+  @user.destroy
    redirect_to users_path, :flash => { :success => "User destroyed."}
   end
 
@@ -65,8 +66,8 @@ class UsersController < ApplicationController
   end
 
   def admin_user
-    user = User.find(params[:id])
-    redirect_to(root_path) if !current_user.admin? || current_user?(user)
+    @user = User.find(params[:id])
+    redirect_to(root_path) if !current_user.admin? || current_user?(@user)
   end
 end
 
