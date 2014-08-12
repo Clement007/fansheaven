@@ -126,6 +126,7 @@ GEM
     turbolinks (2.2.2)
       coffee-rails
     tzinfo (0.3.41)
+    tzinfo-data (1.2013.9)
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
@@ -146,6 +147,6 @@ DEPENDENCIES
   rspec-rails (>= 2.0.0.beta)
   sass-rails
   turbolinks
-  tzinfo
+  tzinfo-data
   uglifier (>= 1.0.3)
   will_paginate

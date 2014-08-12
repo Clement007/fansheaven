@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   before_filter :correct_user, :only => [:edit, :update]
 
   def index
-  @users = User.paginate(:page => 1)
+  @users = User.paginate(:page => params[:page], :per_page => 10)
   @title = "All users"
   end
 

@@ -43,4 +43,4 @@ end
 
 # To use debugger
 # gem 'debugger'
-gem 'tzinfo', platforms: [:mingw, :mswin]
+gem 'tzinfo-data', platforms: [:x64_mingw,:mingw,:mswin]
