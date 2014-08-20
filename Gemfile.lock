@@ -31,7 +31,13 @@ GEM
     annotate (2.5.0)
       rake
     arel (3.0.3)
+    bootstrap-sass (3.2.0.1)
+      sass (~> 3.2)
     builder (3.0.4)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.4)
+      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -61,6 +67,11 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     multi_json (1.10.1)
+    paperclip (4.2.0)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.3)
+      mime-types
     pg (0.17.1-x86-mingw32)
     polyglot (0.3.5)
     rack (1.4.5)
@@ -93,12 +104,12 @@ GEM
     rake (10.3.2)
     rdoc (3.12.2)
       json (~> 1.4)
-    rspec-core (3.0.3)
+    rspec-core (3.0.4)
       rspec-support (~> 3.0.0)
-    rspec-expectations (3.0.3)
+    rspec-expectations (3.0.4)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.0.0)
-    rspec-mocks (3.0.3)
+    rspec-mocks (3.0.4)
       rspec-support (~> 3.0.0)
     rspec-rails (3.0.2)
       actionpack (>= 3.0)
@@ -108,8 +119,8 @@ GEM
       rspec-expectations (~> 3.0.0)
       rspec-mocks (~> 3.0.0)
       rspec-support (~> 3.0.0)
-    rspec-support (3.0.3)
-    sass (3.3.14)
+    rspec-support (3.0.4)
+    sass (3.4.0)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
@@ -123,10 +134,10 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    turbolinks (2.2.2)
+    turbolinks (2.2.3)
       coffee-rails
     tzinfo (0.3.41)
-    tzinfo-data (1.2013.7)
+    tzinfo-data (1.2013.9)
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
@@ -137,10 +148,13 @@ PLATFORMS
 
 DEPENDENCIES
   annotate (= 2.5.0)
+  bootstrap-sass
+  cocaine
   coffee-rails
   factory_girl_rails
   gravatar_image_tag (= 0.1.0)
   jquery-rails
+  paperclip
   pg
   rails (= 3.2.7)
   rails_12factor

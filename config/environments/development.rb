@@ -34,4 +34,5 @@ Fansheaven::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  Paperclip.options[:command_path] = 'C:\Program Files (x86)\ImageMagick-6.5.6-Q8'
 end

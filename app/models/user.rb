@@ -14,8 +14,10 @@
 
 class User < ActiveRecord::Base
   attr_accessor :password
-  attr_accessible :email, :name, :password, :password_confirmation
-
+  attr_accessible :email, :name, :password, :password_confirmation, :avatar
+  has_attached_file :avatar, :styles => { :medium => "98x98>", :thumb => "50x50>" }, :default_url => "public/images/logo.png"
+  validates_attachment_content_type :avatar, :content_type => ["image/jpg","image/JPG","image/jpeg","image/PNG","image/png", "image/gif"]
+  before_save :encrypt_password
   has_many :microposts, :dependent => :destroy
   has_many :relationships, :dependent => :destroy,
                            :foreign_key => "follower_id"
@@ -37,8 +39,6 @@ class User < ActiveRecord::Base
   validates :password, :presence     => true,
                        :confirmation => true,
                        :length       => { :within => 6..40 }
-
-  before_save :encrypt_password
 
 
   def has_password?(submitted_password)
