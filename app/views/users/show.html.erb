@@ -2,10 +2,10 @@
   <table class="table table-striped"  summary="Profile info">
   <tr>
     <td class="">
-      <h1>
+      <b>
         <%= image_tag @user.avatar.url(:medium) %>
         <%= @user.name %>
-      </h1>
+      </b>
       <%= render 'follow_form' if signed_in? %>
       <% if @user.microposts.any? %>
       <table class="microposts" summary="User microposts">

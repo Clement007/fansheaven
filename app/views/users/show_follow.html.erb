@@ -2,7 +2,7 @@
 <table class="table table-striped"  summary="Information about following/followers">
   <tr>
     <td class="active">
-      <h1><%= @title %></h1>
+      <h3><%= @title %></h3>
 
       <% if @users.any? %>
       <ul class="users">
@@ -10,7 +10,7 @@
       </ul>
      <% end %>
     </td>
-    <td class="info">
+    <td class="">
       <strong>Name</strong> <%= @user.name %><br />
       <strong>URL</strong> <%= link_to user_path(@user), @user %><br />
       <strong>Microposts</strong> <%= @user.microposts.count %>

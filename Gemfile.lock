@@ -31,9 +31,6 @@ GEM
     annotate (2.5.0)
       rake
     arel (3.0.3)
-    aws-sdk (1.51.0)
-      json (~> 1.4)
-      nokogiri (>= 1.4.4)
     bootstrap-sass (3.2.0.1)
       sass (~> 3.2)
     builder (3.0.4)
@@ -69,16 +66,12 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
-    mini_portile (0.6.0)
     multi_json (1.10.1)
-    nokogiri (1.6.3.1-x86-mingw32)
-      mini_portile (= 0.6.0)
     paperclip (4.2.0)
       activemodel (>= 3.0.0)
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
-    pg (0.17.1)
     pg (0.17.1-x86-mingw32)
     polyglot (0.3.5)
     rack (1.4.1)
@@ -145,7 +138,7 @@ GEM
     turbolinks (2.2.3)
       coffee-rails
     tzinfo (0.3.41)
-    tzinfo-data (1.2013.4)
+    tzinfo-data (1.2013.8)
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
@@ -156,7 +149,6 @@ PLATFORMS
 
 DEPENDENCIES
   annotate (= 2.5.0)
-  aws-sdk
   bootstrap-sass
   cocaine
   coffee-rails
