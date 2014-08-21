@@ -1,6 +1,7 @@
-<table summary="Information about following/followers">
+<div class="table-responsive">
+<table class="table table-striped"  summary="Information about following/followers">
   <tr>
-    <td class="main">
+    <td class="active">
       <h1><%= @title %></h1>
 
       <% if @users.any? %>
@@ -9,17 +10,18 @@
       </ul>
      <% end %>
     </td>
-    <td class="sidebar round">
+    <td class="info">
       <strong>Name</strong> <%= @user.name %><br />
       <strong>URL</strong> <%= link_to user_path(@user), @user %><br />
       <strong>Microposts</strong> <%= @user.microposts.count %>
       <%= render 'shared/stats' %>
       <% if @users.any? %>
         <% @users.each do |user| %>
-          <%= link_to image_tag(user), user %>
+          <%= link_to image_tag(user.avatar.url(:thumb)), user %>
               <% end %>
       <% end %>
     </td>
   </tr>
 
 </table>
+    </div>

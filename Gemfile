@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.7'
+gem 'rails', '3.2.10'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -8,8 +8,9 @@ gem 'pg'
 gem 'gravatar_image_tag', '0.1.0'
 gem 'will_paginate'
 gem 'bootstrap-sass'
-gem "paperclip"
-# gem 'rmagick'
+gem 'paperclip'
+gem 'aws-sdk'
+gem 'rack', '1.4.1'
 gem 'cocaine'
 # Gems used only for assets and not required
 # in production environments by default.

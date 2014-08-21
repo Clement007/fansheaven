@@ -1,26 +1,33 @@
 <% if signed_in? %>
 
-    <table class="front" summary="For signed-in users">
+    <div class="table-responsive">
+      <table class="table table-striped"  summary="For signed in users">
       <tr>
-        <td class="main">
+        <td class="">
           <h1 class="microposts">What's up?</h1>
           <%= render 'shared/micropost_form' %>
           <%= render 'shared/feed'%>
         </td>
-        <td class="sidebar round">
+        <td class="">
           <%= render 'shared/user_info' %>
           <%= render 'shared/stats' %>
         </td>
       </tr>
     </table>
-
+</div>
 <%	else  %>
-
-<h1>Fans Heaven App</h1>
-<p>
-For artists and fans...This is the first and ever African  made revolutionaly social network  platform made by Africans for Africans and the whole World to connect Artists and their fans!
-</p>
-
-<%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
+    <form class="navbar-form navbar" role="search" align="center">
+      <div class="form-group">
+       <b>Search favorites:</b> <input type="text" class="form-control" placeholder="Enter keyword here..." size="35"/>
+      </div>
+      <button type="submit" class="btn btn-default">Search</button>
+    </form>
+<!--<h1>Fans Heaven App</h1>-->
+<!--<p>-->
+<!--For artists and fans...This is the first and ever African  made revolutionaly social network  platform made by Africans for Africans and the whole World to connect Artists and their fans!-->
+<!--</p>-->
+<div class="centered">
+<%= link_to "Sign up now!", signup_path, :class => "btn btn-default btn-lg" %>
+    </div>
 
 <%	end %>
